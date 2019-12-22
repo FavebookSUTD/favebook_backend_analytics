@@ -119,3 +119,4 @@ def tfidf_result():
 @app.route('/datanode_register', methods=['POST'])
 def datanode_register():
     cluster_ctrl.register_datanode(request.remote_addr)
+    return ''
